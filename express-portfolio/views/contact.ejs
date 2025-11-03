@@ -1,27 +1,68 @@
+<section class="contact py-5">
+  <div class="container">
+    <h1 class="text-center mb-4">Contact Me</h1>
+    <p class="text-center mb-5">If you would like to get in touch, please fill out the form below.</p>
 
-<h1 class="text-center mb-4">Contact Me</h1>
-<div class="row justify-content-center">
-  <div class="col-md-6">
-    <form class="card p-4 shadow-sm bg-white">
-      <div class="mb-3">
-        <label class="form-label">Full Name</label>
-        <input type="text" class="form-control" required>
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Email Address</label>
-        <input type="email" class="form-control" required>
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Message</label>
-        <textarea class="form-control" rows="4" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary w-100">
-        <i class="fas fa-paper-plane me-2"></i>Send Message
-      </button>
-    </form>
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8">
 
-    <div class="text-center mt-4">
-      <p><i class="fas fa-envelope me-2"></i><a href="mailto:yourname@email.com">yourname@email.com</a></p>
-      <p><i class="fab fa-github me-2"></i><a href="https://github.com/YOUR_GITHUB">GitHub</a> | <i class="fab fa-linkedin me-2"></i><a href="https://linkedin.com/in/YOUR_LINKEDIN">LinkedIn</a></p>
+        <form id="contactForm" class="card p-4 shadow-sm bg-white" method="post" onsubmit="return validateform()">
+          <div class="mb-3">
+            <label for="name" class="form-label fw-semibold">Full Name:</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label fw-semibold">Email:</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="example@email.com" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="phone" class="form-label fw-semibold">Cell Number:</label>
+            <input type="tel" id="phone" name="phone" class="form-control" pattern="[0-9]{10}" placeholder="1234567890" required>
+            <small class="text-muted">Enter a 10-digit number (no spaces or dashes).</small>
+          </div>
+
+          <div class="mb-3">
+            <label for="comments" class="form-label fw-semibold">Comments:</label>
+            <textarea id="comments" name="comments" class="form-control" rows="5" placeholder="Your message..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">
+            <i class="fas fa-paper-plane me-2"></i>Submit
+          </button>
+        </form>
+
+        <div class="text-center mt-5">
+          <p><i class="fas fa-envelope me-2"></i>
+            <a href="mailto:charmchristal.guarde@ontariotechu.net">charmchristal.guarde@ontariotechu.net</a>
+          </p>
+          <p class="text-muted small">&copy; 2025 Charm Guarde</p>
+        </div>
+
+      </div>
     </div>
   </div>
+</section>
+
+<script>
+function validateform() {
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const comments = document.getElementById('comments').value.trim();
+
+  if (!name || !email || !phone || !comments) {
+    alert('Please fill out all fields.');
+    return false;
+  }
+
+  if (!/^[0-9]{10}$/.test(phone)) {
+    alert('Please enter a valid 10-digit phone number.');
+    return false;
+  }
+
+  alert('Form submitted successfully!');
+  return true;
+}
+</script>

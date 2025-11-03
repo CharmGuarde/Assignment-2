@@ -13,33 +13,40 @@
  -->
 
 
-<section class="hero">
+
+<!-- HERO / WELCOME SECTION -->
+<section class="welcome text-center py-5 bg-light">
   <div class="container">
-    <h1>Hello, I'm <span class="fw-bold">Charm</span></h1>
-    <p class="lead mt-3">A passionate Web Developer and Computer Science student.</p>
-    <a href="/projects" class="btn btn-light btn-lg mt-4">
-      <i class="fas fa-laptop-code me-2"></i>View My Work
-    </a>
+    <h1 class="fw-bold mb-3">Welcome to My Portfolio!</h1>
+    <h2 class="h5 text-muted mb-4">Click below to learn more about me</h2>
+    <p class="mb-5">
+      Student | Second Year | Ontario Tech University | IT Networking
+    </p>
+
+    <!-- Navigation Buttons -->
+    <div class="d-flex justify-content-center flex-wrap gap-3">
+      <a href="/about" class="btn btn-primary btn-lg px-4">
+        <i class="fas fa-user me-2"></i> About Me
+      </a>
+      <a href="/projects" class="btn btn-success btn-lg px-4">
+        <i class="fas fa-laptop-code me-2"></i> Projects
+      </a>
+      <a href="/contact" class="btn btn-info btn-lg px-4 text-white">
+        <i class="fas fa-envelope me-2"></i> Contact Me
+      </a>
+    </div>
   </div>
 </section>
 
-<section class="container text-center py-5">
-  <h2 class="mb-4">What I Do</h2>
-  <div class="row">
-    <div class="col-md-4">
-      <i class="fas fa-code fa-3x text-primary mb-3"></i>
-      <h5>Web Development</h5>
-      <p>Creating responsive, full-stack web apps using Node.js & Express.</p>
-    </div>
-    <div class="col-md-4">
-      <i class="fas fa-database fa-3x text-primary mb-3"></i>
-      <h5>Backend Logic</h5>
-      <p>Building APIs and handling data using MongoDB and SQL.</p>
-    </div>
-    <div class="col-md-4">
-      <i class="fas fa-lightbulb fa-3x text-primary mb-3"></i>
-      <h5>UI/UX Design</h5>
-      <p>Designing clean and user-friendly interfaces with Bootstrap 5.</p>
-    </div>
+<!-- OPTIONAL EXTRA: FEATURE STRIP -->
+<section class="text-center py-5 bg-white">
+  <div class="container">
+    <h3 class="mb-4">A Little About This Site</h3>
+    <p class="text-muted mb-0">
+      This portfolio was built using <strong>Express.js</strong>, <strong>EJS Templates</strong>,
+      and <strong>Bootstrap 5</strong> — fully responsive and easy to update.
+    </p>
   </div>
 </section>
+
+
