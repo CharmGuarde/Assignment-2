@@ -1,39 +1,65 @@
-<main>
-  <section class="contact">
-    <h1>Contact Me</h1>
-    <p>If you’d like to reach out, please fill in the form below. I’ll respond as soon as possible.</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | Charm Guarde Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
 
-    <form action="#" method="post" onsubmit="return validateForm()">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  <body class="bg-light text-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-white" href="/">Charm Guarde</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link text-white" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/about">About</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link text-white active" href="/contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <main class="container my-5">
+      <div class="text-center mb-5">
+        <h1 class="fw-bold text-danger">Contact Me</h1>
+        <p class="lead">I’d love to hear from you! Fill out the form below to get in touch.</p>
+      </div>
 
-      <label for="phone">Cell Number</label>
-      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+      <form class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+        </div>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="example@email.com" required>
+        </div>
 
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-</main>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone</label>
+          <input type="tel" id="phone" name="phone" class="form-control" placeholder="1234567890" required>
+        </div>
 
-<footer>
-  <p>Contact: <a href="mailto:charmchristal.guarde@ontariotechu.net">charmchristal.guarde@ontariotechu.net</a></p>
-  <p>&copy; 2025 Charm Guarde</p>
-</footer>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" name="message" class="form-control" rows="4" placeholder="Write your message here..." required></textarea>
+        </div>
 
-<script>
-  function validateForm() {
-    const phone = document.getElementById('phone').value;
-    if (!/^[0-9]{10}$/.test(phone)) {
-      alert('Please enter a valid 10-digit phone number.');
-      return false;
-    }
-    alert('Message sent successfully!');
-    return true;
-  }
-</script>
+        <button type="submit" class="btn btn-danger btn-lg w-100">Send Message</button>
+      </form>
+    </main>
+
+    <footer class="bg-danger text-white text-center py-3 mt-5">
+      <p>© 2025 Charm Guarde | <a href="mailto:charmchristal.guarde@ontariotechu.net" class="text-white">Email Me</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
