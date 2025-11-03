@@ -1,8 +1,69 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  color: #222;
 }
 
 a {
-  color: #00B7FF;
+  text-decoration: none;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #007bff, #00b4d8);
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: linear-gradient(to right, #007bff, #00b4d8);
+  color: #fff;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+footer {
+  background-color: #212529;
+  color: #ccc;
+}
+
+footer a {
+  color: #0dcaf0;
+}
+
+footer a:hover {
+  color: #fff;
 }
