@@ -1,22 +1,22 @@
 var express = require('express');
 var router = express.Router();
 
-/* HOME PAGE */
+/* home */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Home' });
 });
 
-/* ABOUT PAGE */
+/* about */
 router.get('/about', function(req, res, next) {
   res.render('about', { title: 'About Me' });
 });
 
-/* PROJECTS PAGE */
+/* projects */
 router.get('/projects', function(req, res, next) {
   res.render('projects', { title: 'Projects' });
 });
 
-/* CONTACT PAGE */
+/* contact */
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact' });
 });
