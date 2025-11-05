@@ -1,6 +1,6 @@
 # Charm Portfolio Website - Assignment 2 
 ## Overview
-The project is used to test my knowledge on creating a portfolio using ExpressJS. I implmemented it by making a website using resources provided in class and by searching it up on Google. 
+The project is used to test my knowledge on creating a portfolio using ExpressJS. I implemented it by making a website using resources provided in class and by searching it up on Google. 
 
 ------------------------------------------------------------------------------------------------
 
