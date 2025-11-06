@@ -20,7 +20,7 @@ My website has 4 links
 ------------------------------------------------------------------------------------------------
 
 ## Links 
-1. 
+1. https://assignment-2-3to6.onrender.com/
 2. https://www.linkedin.com/in/charm-guarde-218a7b338/ 
 3. https://github.com/CharmGuarde
 
@@ -29,12 +29,11 @@ My website has 4 links
 ## References 
 1. In class lectures and videos
 2. Youtube videos 
-3. Microsoft Learn 
-4. Visual Studio Code
-5. Bootstrap 
+3. Microsoft Learn website
+4. Visual Studio Code website
+5. Bootstrap website
 
 ------------------------------------------------------------------------------------------------
 
 ## How to run? 
 1. You can use the link I've provided in this readme file 
-2. Clone 
