@@ -1,21 +1,23 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charm Guarde | Portfolio</title>
+    <!-- Document metadata -->
+    <meta charset="UTF-8"> <!-- Character encoding UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- viewport for mobile devices -->
+    <title>Charm Guarde | Portfolio</title> <!-- page title shown in browser tab and search results -->
 
-    <!-- Bootstrap -->
+    <!-- CSS libraries
+     bootstrap CSS; provides layout utilities, components, and responsive grid -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     >
-    <!-- Font Awesome -->
+    <!-- font Awesome; icon fonts used for social links and UI icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     >
-<!--Styles for the pages-->
+    <!-- styles for the pages -->
     <style>
       body {
         background-color: #f8fbff; /* soft blue-white */
@@ -51,9 +53,9 @@
       }
 
 /* ------------------------ HOME PAGE ---------------------------*/      
-      /* Home page text background effect */
+/* home page text background effect */
       .hero-box {
-        background-color: #f1f3f5;  /* soft gray background */
+        background-color: #f1f3f5; 
         border-radius: 15px;
         padding: 3rem;
         transition: all 0.3s ease;
@@ -61,14 +63,14 @@
       }
 
       .hero-box:hover {
-        background-color: #e3f2fd;  /* light blue on hover */
+        background-color: #e3f2fd;  
         transform: scale(1.02);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       }
 
 /* ------------------------ ABOUT PAGE ---------------------------*/
     
-            /* About Me gradient box */
+/* about Me gradient box */
       .about-box {
         background: linear-gradient(135deg, #007bff, #00bfff); /* blue ombre */
         transition: all 0.3s ease;
@@ -86,7 +88,7 @@
         height: 220px;
         object-fit: cover;              /* keeps image centered and not stretched */
         border-radius: 50%;             /* makes it a perfect circle */
-        border: 4px solid #000000;      /* blue border ring */
+        border: 4px solid #000000;      
         transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
 
@@ -97,7 +99,7 @@
 
 /* ------------------------ NAVIGATION PAGE ---------------------------*/
 
-/* Navbar profile image */
+/* navigation bar profile image */
       .nav-profile-img {
         width: 40px;
         height: 40px;
@@ -114,65 +116,76 @@
 
 /* ------------------------ CONTACT PAGE ---------------------------*/
 
-/*Contact Me page*/
-      .card { /* pops up the card in the contact me page, so that stands out*/
+/* pops up the card in the contact me page, so that stands out*/
+      .card { 
         border: none;
         border-radius: 20px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
       }
 
-            /* Projects section background */
-      .projects-section {
-        background: linear-gradient(135deg, #b4cce6, #89d1e7);
-        min-height: 100vh;
-        padding-top: 100px;
-        padding-bottom: 100px;
+/* ------------------------ PROJECT PAGE ---------------------------*/
+
+      /* cards inside the projects page */
+      #projects .card {
+        background: linear-gradient(135deg, #e9f2ff, #cfe2ff);
+        border: none;
+        border-radius: 12px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
 
-      /* Title background */
-      .projects-title {
-        background-color: rgba(46, 84, 187, 0.973);
-        display: inline-block;
-        border-radius: 15px;
-        padding: 0.75rem 2rem;
-        backdrop-filter: blur(4px);
-        font-weight: 700;
-        font-size: 2rem;
+      #projects .card:hover {
+        transform: translateY(-6px);
       }
 
-      /* Project card style */
-      .project-card {
-        background: linear-gradient(135deg, #2481dd, #219ad6);
-        color: #000000;
-        border-radius: 15px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      /*buttons*/
+      
+      .btn-view {
+        color: #0d6efd;                
+        border: 2px solid #0d6efd;       
+        font-weight: 600;
+        border-radius: 30px;
+        padding: 10px 20px;
+        background-color: transparent;
         transition: all 0.3s ease;
       }
 
-      /* Hover effect */
-      .project-card:hover {
-        background: linear-gradient(135deg, #b3e5fc, #e1f5fe);
-        transform: translateY(-5px);
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      .btn-view:hover {
+        background-color: #0d6efd;          /* blue background on hover */
+        color: #ffffff;                     /* changes to white when hovered text */
+        box-shadow: 0 4px 15px rgba(13, 110, 253, 0.4);
+        transform: translateY(-2px);
       }
 
-
+      /*changes apperance when clicked*/
+      .btn-view:active {
+        background-color: #084298; 
+        border-color: #084298;
+        box-shadow: 0 2px 8px rgba(13, 110, 253, 0.5);
+        transform: translateY(1px);
+      }
     </style>
   </head>
 
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center fw-bold" href="/">
+
+    <!-- site-wide navigation visible at the top -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm"> <!-- fixed-top keeps the nav visible while scrolling -->
+      <div class="container"> <!-- centers navbar content and width -->
+        <a class="navbar-brand d-flex align-items-center fw-bold" href="/"> <!-- link back to home -->
+
+          <!-- small profile image displayed in the navbar -->
           <img
-            src="/images/profile/charm.jpg"
+            src="/images/profile/charm.jpg" 
             alt="Charm Guarde"
             class="nav-profile-img me-2"
           >
-          Charm Guarde
+          Charm Guarde <!-- text next to the image -->
         </a>
 
+        <!-- collapsed menu button shown on smaller screens so like mobiles or also if screen is smaller on laptops \
+        - data-bs-toggle="collapse": bootstrap attribute to toggle the collapsible menu 
+        - data-bs-target="#navbarNav": ID of the collapsible menu 
+        -->
         <button
           class="navbar-toggler"
           type="button"
@@ -182,31 +195,39 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+        <!-- links to the other pages, and the container for the collpasible menu
+        - class="navbar-nav ms-auto": right- aligned navigation links 
+        -->
+        <div class="collapse navbar-collapse" id="navbarNav"> 
+          <ul class="navbar-nav ms-auto"> 
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li> 
+            <li class="nav-item"><a class="nav-link" href="/about">About</a></li> 
+            <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li> 
+            <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li> 
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Main Content -->
-    <main class="container" style="margin-top: 100px;">
-      <%- body %>
+    <!-- main content -->
+    <main class="container" style="margin-top: 100px;"> <!-- main container where each view's content is injected -->
+      <%- body %> <!-- EJS placeholder: server renders the specific page content here -->
     </main>
 
-    <!-- Footer -->
+    <!-- footer -->
     <footer>
+      <!-- 
+      target="blank_" open links in a new tab 
+      -->
       <p>
         &copy; 2025 Charm Guarde | 
-        <a href="https://github.com/CharmGuarde" class="text-white me-2"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/charm-guarde-218a7b338/" class="text-white"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/CharmGuarde" class="text-white me-2" target="blank_"> <i class="fab fa-github"></i></a> 
+        <a href="https://www.linkedin.com/in/charm-guarde-218a7b338/" class="text-white" target="blank_"><i class="fab fa-linkedin"></i></a> 
+        <a href="mailto:charmchristal.guarde@ontariotechu.net" class="text-white" target="_blank"><i class="fas fa-envelope"></i>
       </p>
     </footer>
 
+    <!-- bootstrap JS bundle; enables interactive components like collapse, dropdowns, tooltips -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

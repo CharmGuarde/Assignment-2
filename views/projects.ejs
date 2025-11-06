@@ -1,39 +1,62 @@
-<section class="projects-section py-5">
-  <div class="container">
-    <h2 class="projects-title text-center text-white py-3 mb-5">Projects</h2>
+<section id="projects" class="py-5"> <!-- projects section wrapper with vertical padding -->
+  <div class="container"> <!-- width and centers content -->
 
-    <div class="row g-4">
-      <div class="col-md-6">
-        <div class="project-card p-4">
-          <h5 class="fw-bold">Object Oriented Programming Final Project</h5>
-          <p>A trip planner program built using OOP principles.</p>
-          <a href="https://drive.google.com/file/d/13LvkbUgJIrqNcOEQcU9lOCO0v6SY0iP4/view" class="btn btn-outline-light">View Project</a>
-        </div>
-      </div>
+    <h1 class="text-center mb-5 fw-bold text-black">My Projects</h1> <!-- section heading centered with bold weight -->
 
-      <div class="col-md-6">
-        <div class="project-card p-4">
-          <h5 class="fw-bold">Networking Project</h5>
-          <p>Configured a network topology as part of a team exercise.</p>
-          <a href="https://docs.google.com/document/d/1B1KoRs9WvzvefAwn8HSrdNnIUfiVaTK20-NjIzs31cU/edit" class="btn btn-outline-light">View Instructions</a>
-        </div>
-      </div>
+    <div class="row g-4"> <!-- bootstrap grid row with gap between columns -->
 
-      <div class="col-md-6">
-        <div class="project-card p-4">
-          <h5 class="fw-bold">Collaborative Leadership Project</h5>
-          <p>Analyzed ethical and unethical leadership traits in group dynamics.</p>
-          <a href="https://drive.google.com/file/d/1cgYZSwlPq0O-rpP0ClPSdJkdhJW5F8qj/view" class="btn btn-outline-light">Watch Video</a>
-        </div>
-      </div>
 
-      <div class="col-md-6">
-        <div class="project-card p-4">
-          <h5 class="fw-bold">Discrete Math Application</h5>
-          <p>Connected the Rubik’s Cube to concepts from discrete mathematics.</p>
-          <a href="https://docs.google.com/document/d/1ZMnqKc1ad2JRVCJj59lwGJS-S34H0el7k7AFSonU-do/edit" class="btn btn-outline-light">View Report</a>
+      <!-- OOP Project -->
+      <div class="col-md-6 col-lg-4"> <!-- col for oop  -->
+        <div class="card shadow-lg border-0 h-100"> <!-- card with shadow, no border, full height to align with others -->
+          <img src="/images/profile/trip-planner.png" class="card-img-top" alt="OOP Project"> 
+          <div class="card-body"> <!-- card body containing title, description and link -->
+            <h5 class="card-title fw-bold text-black">Object Oriented Programming Final Project</h5> 
+            <p class="card-text">Final project; created a trip planner program with OOP concepts.</p>
+            <a href="https://drive.google.com/file/d/13LvkbUgJIrqNcOEQcU9lOCO0v6SY0iP4/view?usp=sharing"
+               target="_blank" rel="noopener noreferrer" class="btn btn-view">View Demo</a> <!-- link opens demo in a new tab safely using noopener (protects from hackers or hijackers) noreferrer (better privacy) -->
+          </div> 
+        </div> 
+      </div> 
+
+      <!-- Networking Project -->
+      <div class="col-md-6 col-lg-4"> 
+        <div class="card shadow-lg border-0 h-100"> 
+          <img src="/images/profile/networking.jpg" class="card-img-top" alt="Networking Project"> 
+          <div class="card-body"> <!-- Card body with project details -->
+            <h5 class="card-title fw-bold text-black">Networking Project</h5>
+            <p class="card-text">Configured a complex topology using Cisco Packet Tracer applying routing and subnetting learned in first year Univsersity.</p>
+            <a href="https://docs.google.com/document/d/1B1KoRs9WvzvefAwn8HSrdNnIUfiVaTK20-NjIzs31cU/edit?usp=sharing"
+               target="_blank" rel="noopener noreferrer" class="btn btn-view">View Document</a>
+          </div> 
+        </div> 
+      </div> 
+
+      <!-- Leadership Project -->
+      <div class="col-md-6 col-lg-4"> 
+        <div class="card shadow-lg border-0 h-100"> 
+          <img src="/images/profile/leadership.jpg" class="card-img-top" alt="Leadership Project"> 
+          <div class="card-body"> 
+            <h5 class="card-title fw-bold text-black">Collaborative Leadership Project</h5>
+            <p class="card-text">A group project exploring leadership traits and ethics.</p> 
+            <a href="https://drive.google.com/file/d/1cgYZSwlPq0O-rpP0ClPSdJkdhJW5F8qj/view?usp=sharing"
+               target="_blank" rel="noopener noreferrer" class="btn btn-view">Watch Video</a>
+          </div>
+        </div> 
+      </div> 
+
+      <!-- Discrete Math -->
+      <div class="col-md-6 col-lg-4"> 
+        <div class="card shadow-lg border-0 h-100">
+          <img src="/images/profile/rubiks.png" class="card-img-top" alt="Discrete Math">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-black">Discrete Math Project</h5>
+            <p class="card-text">Explored how group theory and permutations relate to solving a Rubik’s Cube.</p> 
+            <a href="https://docs.google.com/document/d/1ZMnqKc1ad2JRVCJj59lwGJS-S34H0el7k7AFSonU-do/edit?usp=drive_link"
+               target="_blank" rel="noopener noreferrer" class="btn btn-view">View Report</a> 
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </div> 
+    </div> 
+  </div> 
+</section> 
