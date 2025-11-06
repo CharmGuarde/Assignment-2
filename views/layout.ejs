@@ -1,68 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"> 
-    <title>Charm Guarde Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charm Guarde | Portfolio</title>
 
-    <!--Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    >
+<!--Styles for the pages-->
+    <style>
+      body {
+        background-color: #f8fbff; /* soft blue-white */
+        font-family: "Poppins", sans-serif;
+      }
+      .navbar {
+        background-color: #007bff; /* calm blue */
+      }
+      .navbar a {
+        color: white !important;
+        font-weight: 500;
+      }
+      .navbar a:hover {
+        color: #d4ebff !important;
+      }
+      footer {
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 3rem;
+      }
+      .section-title {
+        color: #007bff;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+      .card {
+        border: none;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 15px;
+      }
 
-    <!--Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+/* ------------------------ HOME PAGE ---------------------------*/      
+      /* Home page text background effect */
+      .hero-box {
+        background-color: #f1f3f5;  /* soft gray background */
+        border-radius: 15px;
+        padding: 3rem;
+        transition: all 0.3s ease;
+        display: inline-block;
+      }
 
-    <!--Optional custom CSS -->
-    <link rel="stylesheet" href="/stylesheets/style.css">
+      .hero-box:hover {
+        background-color: #e3f2fd;  /* light blue on hover */
+        transform: scale(1.02);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+/* ------------------------ ABOUT PAGE ---------------------------*/
+    
+            /* About Me gradient box */
+      .about-box {
+        background: linear-gradient(135deg, #007bff, #00bfff); /* blue ombre */
+        transition: all 0.3s ease;
+      }
+
+      .about-box:hover {
+        background: linear-gradient(135deg, #5ab4ff, #9cd9ff); /* lighter blue when hovered */
+        transform: scale(1.02);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+
+/* makes profile image in about circular */
+      .profile-img {
+        width: 220px;
+        height: 220px;
+        object-fit: cover;              /* keeps image centered and not stretched */
+        border-radius: 50%;             /* makes it a perfect circle */
+        border: 4px solid #000000;      /* blue border ring */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .profile-img:hover {
+        transform: scale(1.05);         /* slight zoom on hover */
+        box-shadow: 0 0 15px rgba(0, 123, 255, 0.5); /* blue glow */
+      }
+
+/* ------------------------ NAVIGATION PAGE ---------------------------*/
+
+/* Navbar profile image */
+      .nav-profile-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid white;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .nav-profile-img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+      }
+
+/* ------------------------ CONTACT PAGE ---------------------------*/
+
+/*Contact Me page*/
+      .card { /* pops up the card in the contact me page, so that stands out*/
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      }
+
+    </style>
   </head>
 
-  <body class="bg-light text-dark">
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center fw-bold" href="/">
+          <img
+            src="/images/profile/charm.jpg"
+            alt="Charm Guarde"
+            class="nav-profile-img me-2"
+          >
+          Charm Guarde
+        </a>
 
-    <!--Header -->
-    <header class="bg-danger text-white py-3 shadow-sm">
-      <div class="container d-flex flex-wrap justify-content-between align-items-center">
-        <h3 class="fw-bold mb-0">Charm Guarde</h3>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <nav class="d-flex flex-wrap align-items-center">
-          <a href="/" class="text-white fw-semibold me-3 text-decoration-none">Home</a>
-          <a href="/about" class="text-white fw-semibold me-3 text-decoration-none">About</a>
-          <a href="/projects" class="text-white fw-semibold me-3 text-decoration-none">Projects</a>
-          <a href="/contact" class="text-white fw-semibold text-decoration-none">Contact</a>
-        </nav>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
-    </header>
+    </nav>
 
-    <!--main content-->
-    <main class="container my-5">
+    <!-- Main Content -->
+    <main class="container" style="margin-top: 100px;">
       <%- body %>
     </main>
 
-    <!--Footer-->
-    <footer class="bg-danger text-white text-center py-4 mt-5">
-      <div class="mb-3">
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/charm-guarde-218a7b338/"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="text-white fs-4 me-3">
-           <i class="fab fa-linkedin"></i>
-        </a>
-
-        <!-- GitHub -->
-        <a href="https://github.com/CharmGuarde"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="text-white fs-4">
-           <i class="fab fa-github"></i>
-        </a>
-      </div>
-
-      <p class="mb-0">
-        © 2025 Charm Guarde |
-        <a href="mailto:charmchristal.guarde@ontariotechu.net" class="text-white fw-semibold">charmchristal.guarde@ontariotechu.net</a>
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; 2025 Charm Guarde | 
+        <a href="https://github.com/CharmGuarde" class="text-white me-2"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/charm-guarde-218a7b338/" class="text-white"><i class="fab fa-linkedin"></i></a>
       </p>
     </footer>
 
-    <!--Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
