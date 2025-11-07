@@ -6,10 +6,10 @@ The project is used to test my knowledge on creating a portfolio using ExpressJS
 
 ## Structure 
 My website has 4 links
-1. homepage - Welcome page, links to explore more of my website 
-2. about - Learn more in depth about me 
-3. projects - Projects I have done in the past few years 
-4. contact - How to contact me 
+1. homepage (index.ejs) - Welcome page, links to explore more of my website 
+2. about (about.ejs) - Learn more in depth about me 
+3. projects (projects.ejs) - Projects I have done in the past few years 
+4. contact (contact.ejs) - How to contact me 
 
 ------------------------------------------------------------------------------------------------
 
@@ -28,12 +28,19 @@ My website has 4 links
 
 ## References 
 1. In class lectures and videos
-2. Youtube videos 
+2. Youtube videos (BroCode) 
 3. Microsoft Learn website
 4. Visual Studio Code website
 5. Bootstrap website
+6. Render; used to deploy as live link
 
 ------------------------------------------------------------------------------------------------
 
 ## How to run? 
-1. You can use the link I've provided in this readme file 
+1. You can use the link I've provided in this readme file
+
+------------------------------------------------------------------------------------------------
+
+## Contact
+Email: charmchristal.guarde@ontariotechu.net
+Phone: 416-518-8078
